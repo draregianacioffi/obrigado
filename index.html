@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PPM3CBHT');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assinatura Confirmada | Dra. Regina Cioffi</title>
+  <meta name="description" content="Muito obrigado por assinar este manifesto e apoiar a nossa causa para transformarmos a realidade do Sul de Minas.">
+  <link rel="icon" type="image/png" href="./assets/favicon-CHKRxBI8.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --color-bg-light: #f4f8ff;
+      --color-bg-gradient: radial-gradient(circle at 50% 50%, #f7faff 0%, #e0f2fe 100%);
+      --color-card-bg: rgba(255, 255, 255, 0.9);
+      --color-brand-blue: #0284c7;
+      --color-brand-blue-dark: #0369a1;
+      --color-brand-blue-glow: rgba(14, 165, 233, 0.2);
+      --color-brand-teal: #0d9488;
+      --color-cta-gradient: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      --color-cta-gradient-hover: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+      --color-white: #FFFFFF;
+      --color-text-main: #0f172a;
+      --color-text-sub: #334155;
+      --color-text-muted: #64748b;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      overflow-x: hidden;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--color-bg-gradient);
+      background-attachment: fixed;
+      color: var(--color-text-main);
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      box-sizing: border-box;
+      position: relative;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Decorative background glowing shapes */
+    body::before, body::after {
+      content: "";
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      background: rgba(14, 165, 233, 0.08);
+      filter: blur(90px);
+      z-index: -1;
+      pointer-events: none;
+    }
+    body::before {
+      top: 10%;
+      left: -150px;
+    }
+    body::after {
+      bottom: 15%;
+      right: -150px;
+      background: rgba(13, 148, 136, 0.07); /* subtle teal glow */
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 800px;
+      flex: 1;
+      margin: auto; /* Vertically and horizontally centers in flexbox */
+      padding: 3rem 1.5rem 2.5rem 1.5rem;
+      box-sizing: border-box;
+      gap: 1.5rem;
+    }
+
+    /* Adapt the white paths of the logo to dark text for contrast on light background */
+    .logo path[fill="white"] {
+      fill: var(--color-text-main) !important;
+    }
+
+    footer {
+      width: 100%;
+      max-width: 800px;
+      padding: 2rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      border-top: 1px solid rgba(14, 165, 233, 0.15);
+      box-sizing: border-box;
+      margin: auto auto 0 auto; /* centered horizontally, at the bottom vertically */
+      background-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    footer a {
+      color: var(--color-brand-blue-dark);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    footer a:hover {
+      color: var(--color-brand-blue);
+      text-decoration: underline;
+    }
+
+    /* ---------------- THANK YOU SECTION ---------------- */
+    .thankyou-section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .logo-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .logo {
+      height: 93px; /* increased by 50% from 62px */
+      max-width: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
+    }
+
+    .thankyou-card {
+      background: var(--color-card-bg);
+      border: 1px solid rgba(14, 165, 233, 0.15);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      border-top: 5px solid var(--color-brand-blue);
+      position: relative;
+    }
+
+    .success-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .success-icon-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background-color: rgba(16, 185, 129, 0.15);
+      border: 2px solid rgba(16, 185, 129, 0.45);
+      color: #10b981;
+      flex-shrink: 0;
+      animation: pulse-success 2.5s infinite;
+    }
+
+    @keyframes pulse-success {
+      0% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+      }
+      70% {
+        box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+      }
+    }
+
+    .success-icon-badge svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    .success-titles {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .thankyou-title {
+      font-size: clamp(1.4rem, 2.2vw, 2.1rem);
+      font-weight: 900;
+      color: var(--color-text-main);
+      line-height: 1.2;
+    }
+
+    .thankyou-subtitle {
+      font-size: clamp(1.05rem, 1.3vw, 1.25rem);
+      font-weight: 700;
+      color: var(--color-brand-teal);
+      margin-top: 0.2rem;
+    }
+
+    .thankyou-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      font-size: clamp(0.98rem, 1.1vw, 1.08rem);
+      line-height: 1.7;
+      color: var(--color-text-sub);
+      text-align: center;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(2, 132, 199, 0.04) 0%, rgba(13, 148, 136, 0.04) 100%);
+      border-top: 4px solid var(--color-brand-teal);
+      padding: 1.25rem 1.5rem;
+      border-radius: 12px;
+      margin: 0.5rem 0;
+      text-align: center;
+    }
+
+    .highlight-title {
+      font-weight: 800;
+      color: var(--color-brand-blue-dark);
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .strong-text {
+      font-weight: 700;
+      color: var(--color-text-main);
+    }
+
+    .btn-instagram {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: var(--color-cta-gradient);
+      color: var(--color-white);
+      text-decoration: none;
+      padding: 1.15rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 800;
+      border-radius: 8px;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+      box-shadow: 0 8px 22px -6px rgba(234, 88, 12, 0.4);
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .btn-instagram::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -50%;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.25) 50%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: skewX(-25deg);
+      transition: 0.75s;
+      opacity: 0;
+    }
+    
+    .btn-instagram:hover::after {
+      left: 125%;
+      opacity: 1;
+    }
+    
+    .btn-instagram:hover, .btn-instagram:focus {
+      background: var(--color-cta-gradient-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 25px -4px rgba(234, 88, 12, 0.5);
+      color: var(--color-white);
+      outline: none;
+    }
+    
+    .btn-instagram:active {
+      transform: translateY(0);
+    }
+
+    /* ---------------- DOCTOR PROFILE SECTION ---------------- */
+    .doctor-profile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.25rem;
+      margin: 1.5rem 0 0.5rem 0;
+      padding: 1.75rem 0 0 0;
+      border-top: 1px dashed rgba(14, 165, 233, 0.2);
+    }
+
+    .doctor-avatar-wrapper {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid var(--color-brand-blue);
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.15);
+    }
+
+    .doctor-avatar-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .doctor-profile-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .doctor-profile-name-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .doctor-profile-name {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--color-text-main);
+    }
+
+    .doctor-profile-role {
+      font-size: 0.78rem;
+      color: #0284c7;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .doctor-profile-bio {
+      font-size: 0.9rem;
+      color: var(--color-text-sub);
+      line-height: 1.6;
+    }
+
+    /* ---------------- RESPONSIVO ---------------- */
+    @media (max-width: 1024px) {
+      .main-container {
+        padding: 2rem 1.25rem;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPM3CBHT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <main class="main-container">
+    
+    <!-- SEÇÃO DE OBRIGADO -->
+    <section class="thankyou-section">
+      <div class="logo-wrapper">
+        <img src="./assets/logo-reginacioffi-Ij_GKIvw.svg" alt="Logo Dra. Regina Cioffi" class="logo">
+      </div>
+      
+      <div class="thankyou-card">
+        <div class="success-header">
+          <div class="success-icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="success-titles">
+            <h1 class="thankyou-title">Assinatura Confirmada!</h1>
+            <p class="thankyou-subtitle">Muito obrigada pelo seu apoio.</p>
+          </div>
+        </div>
+        
+        <div class="thankyou-content">
+          <p>Sua voz fez a diferença hoje. Ao assinar este manifesto, você deu um passo importantíssimo para transformarmos a realidade do Sul de Minas e protegermos quem mais precisa.</p>
+          <p>Mas a nossa luta não termina aqui. O peso de um projeto não está apenas no papel, mas nas pessoas que continuam acompanhando e cobrando resultados todos os dias.</p>
+          
+          <div class="highlight-box">
+            <div class="highlight-title">Não fique de fora dos próximos passos!</div>
+            <p>Siga meu perfil no Instagram. É lá que eu vou te atualizar sobre o andamento desta pauta, mostrar os bastidores do nosso trabalho na saúde e na gestão pública, e continuar batendo de frente para que as nossas exigências sejam ouvidas.</p>
+          </div>
+          
+          <p class="strong-text">Juntos nós somos muito mais fortes. Clica no botão abaixo e vem comigo!</p>
+        </div>
+
+        <!-- PERFIL INLINE DA MÉDICA -->
+        <div class="doctor-profile-section">
+          <div class="doctor-avatar-wrapper">
+            <img src="./assets/foto-draregina-CueuQ2ps.jpg" alt="Foto da Dra. Regina Cioffi">
+          </div>
+          <div class="doctor-profile-details">
+            <div class="doctor-profile-name-row">
+              <span class="doctor-profile-name">Dra. Regina Cioffi</span>
+              <span class="doctor-profile-role">| Médica Pediatra</span>
+            </div>
+            <p class="doctor-profile-bio">
+              Com mais de 30 anos dedicados à medicina e à melhoria da saúde pública, a Dra. Regina Cioffi trabalha incansavelmente por atendimento humanizado e acessível. Ciente dos grandes desafios enfrentados pela nossa população, ela lidera esta iniciativa para transformar a realidade da saúde e da gestão pública no Sul de Minas, combatendo desigualdades e garantindo que quem mais precisa receba a devida atenção e cuidado.
+            </p>
+          </div>
+        </div>
+        
+        <a href="https://www.instagram.com/drareginacioffi/" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+          <span>👉 SEGUIR A DRA. REGINA NO INSTAGRAM</span>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Dra. Regina Cioffi. Todos os direitos reservados.</p>
+    <p>Produzido por <a href="https://studioeasy.com.br/" target="_blank" rel="noopener noreferrer">Studio Easy</a> 💚</p>
+  </footer>
+</body>
+</html>
